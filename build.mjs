@@ -143,14 +143,20 @@ function listMarkdownFiles() {
   const all = readdirSync(MD_DIR).filter(f => f.endsWith(".md") && !f.startsWith("_"));
   return all.sort((a, b) => {
     // 数字順ソート（0-0, 1-0, 1-2, 2-0, 2.5-0, 3-0, ...）
+    // EX系は通常の番号より後 + EX内は番号順（EX0, EX1, ..., EX）
     const parse = s => {
-      const m = s.match(/^([\d.]+)-(\d+)/);
-      if (!m) return [9999, 9999];
-      return [parseFloat(m[1]) * 1000, parseInt(m[2])];
+      const numMatch = s.match(/^([\d.]+)-(\d+)/);
+      if (numMatch) return [parseFloat(numMatch[1]) * 1000, parseInt(numMatch[2])];
+      const exMatch = s.match(/^([\d.]+)-EX(\d*)/);
+      if (exMatch) {
+        const sub = exMatch[2] === "" ? 9999 : parseInt(exMatch[2]);
+        return [parseFloat(exMatch[1]) * 1000 + 500, sub];
+      }
+      return [9999, 9999];
     };
     const [a1, a2] = parse(a);
     const [b1, b2] = parse(b);
-    return a1 - b1 || a2 - b2;
+    return a1 - b1 || a2 - b2 || a.localeCompare(b);
   });
 }
 
