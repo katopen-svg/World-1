@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid meet" role="img" aria-label="案件文をAIに渡して提案文を生成する変換フロー：左に案件カード、中央にClaude（テンプレプロンプト）、右に200〜400字の提案文">
+  <defs>
+    <filter id="pf-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="pf-arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#0ea5e9"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="460" fill="#f0f9ff" rx="14"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#0c4a6e" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📝 案件文 → AI → 提案文 — 1案件3分で書き上げる流れ</text>
+
+  <!-- ============== LEFT: 案件カード（INPUT） ============== -->
+
+  <text x="160" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#075985" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">① 案件文（INPUT）</text>
+
+  <g filter="url(#pf-shadow)">
+    <rect x="40" y="105" width="240" height="280" rx="10" fill="white" stroke="#7dd3fc" stroke-width="2"/>
+  </g>
+  <text x="60" y="135" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">楽天キッチン雑貨</text>
+  <text x="60" y="153" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">ショップ100社調査</text>
+
+  <text x="60" y="180" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">指定カテゴリ内のショップ名・</text>
+  <text x="60" y="195" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">運営会社・公式URLを取得して</text>
+  <text x="60" y="210" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">いただきます。</text>
+
+  <text x="60" y="240" font-size="11" font-weight="700" fill="#16a34a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📄 マニュアルあり</text>
+
+  <rect x="60" y="258" width="80" height="24" rx="3" fill="#fef3c7"/>
+  <text x="100" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥2,000</text>
+
+  <text x="60" y="304" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📦 100件　📅 5日以内</text>
+
+  <text x="60" y="332" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">★ 4.8（発注85件）</text>
+  <text x="60" y="350" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">👤 提案中: 8人</text>
+
+  <text x="160" y="375" text-anchor="middle" font-size="10" fill="#0369a1" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">URLでもコピペでもOK</text>
+
+  <!-- Arrow 1 -->
+  <line x1="290" y1="245" x2="370" y2="245" stroke="#0ea5e9" stroke-width="3" marker-end="url(#pf-arrow)"/>
+
+  <!-- ============== CENTER: AI処理 ============== -->
+
+  <text x="500" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#075985" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">② Claude が処理</text>
+
+  <g filter="url(#pf-shadow)">
+    <rect x="380" y="105" width="240" height="280" rx="10" fill="#1f2937"/>
+  </g>
+
+  <!-- AI icon -->
+  <circle cx="500" cy="155" r="32" fill="#ea580c"/>
+  <text x="500" y="165" text-anchor="middle" font-size="32" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">C</text>
+
+  <text x="500" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#e5e7eb" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">テンプレプロンプト</text>
+  <text x="500" y="226" text-anchor="middle" font-size="11" fill="#9ca3af" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">＋ 案件本文 を渡す</text>
+
+  <!-- Pseudo prompt block -->
+  <rect x="400" y="244" width="200" height="118" rx="6" fill="#374151"/>
+  <text x="412" y="262" font-size="9" fill="#fbbf24" font-family="system-ui, -apple-system, monospace">提案文を200〜400字で</text>
+  <text x="412" y="276" font-size="9" fill="#fbbf24" font-family="system-ui, -apple-system, monospace">書いてください。</text>
+  <text x="412" y="294" font-size="9" fill="#9ca3af" font-family="system-ui, -apple-system, monospace">構成: 挨拶→応募理由</text>
+  <text x="412" y="308" font-size="9" fill="#9ca3af" font-family="system-ui, -apple-system, monospace">→強み→取り組み方</text>
+  <text x="412" y="322" font-size="9" fill="#9ca3af" font-family="system-ui, -apple-system, monospace">→納期感→締め</text>
+  <text x="412" y="340" font-size="9" fill="#a7f3d0" font-family="system-ui, -apple-system, monospace">[案件本文をペースト]</text>
+  <text x="412" y="354" font-size="9" fill="#9ca3af" font-family="system-ui, -apple-system, monospace">...</text>
+
+  <!-- Arrow 2 -->
+  <line x1="630" y1="245" x2="710" y2="245" stroke="#0ea5e9" stroke-width="3" marker-end="url(#pf-arrow)"/>
+
+  <!-- ============== RIGHT: 提案文（OUTPUT） ============== -->
+
+  <text x="900" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#075985" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">③ 提案文（OUTPUT）</text>
+
+  <g filter="url(#pf-shadow)">
+    <rect x="720" y="105" width="440" height="280" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+  </g>
+
+  <!-- Header -->
+  <rect x="720" y="105" width="440" height="32" rx="10" fill="#dcfce7"/>
+  <rect x="720" y="125" width="440" height="12" fill="#dcfce7"/>
+  <text x="940" y="126" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📨 200〜400字の提案文</text>
+
+  <!-- Structured output preview -->
+  <text x="740" y="160" font-size="11" font-weight="700" fill="#0369a1" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">① 挨拶</text>
+  <text x="740" y="175" font-size="10" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">はじめまして、〇〇と申します。</text>
+
+  <text x="740" y="200" font-size="11" font-weight="700" fill="#0369a1" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">② なぜこの案件に応募したか</text>
+  <text x="740" y="215" font-size="10" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">楽天市場のリサーチ経験があり、貴案件の</text>
+  <text x="740" y="229" font-size="10" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">仕様（マニュアルあり）に魅力を感じました。</text>
+
+  <text x="740" y="252" font-size="11" font-weight="700" fill="#0369a1" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">③ 強み・取り組み方</text>
+  <text x="740" y="267" font-size="10" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">マニュアル準拠で進め、まず3件試して</text>
+  <text x="740" y="281" font-size="10" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">方向確認 → 100件本番のフローで納品します。</text>
+
+  <text x="740" y="304" font-size="11" font-weight="700" fill="#0369a1" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">④ 納期感</text>
+  <text x="740" y="319" font-size="10" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">納期5日以内、3日での納品を目標とします。</text>
+
+  <text x="740" y="342" font-size="11" font-weight="700" fill="#0369a1" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⑤ 締め</text>
+  <text x="740" y="357" font-size="10" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">お気軽にご相談ください。よろしくお願いします。</text>
+
+  <!-- Footer caption -->
+  <text x="600" y="425" text-anchor="middle" font-size="12" fill="#0369a1" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">テンプレプロンプトを1度作れば、案件本文を入れ替えるだけで何度でも使い回せる</text>
+</svg>

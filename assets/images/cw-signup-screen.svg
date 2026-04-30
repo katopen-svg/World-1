@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" preserveAspectRatio="xMidYMid meet" role="img" aria-label="クラウドワークスのワーカー会員登録画面：メアド、パスワード入力フォームと「登録する」ボタン">
+  <defs>
+    <filter id="su2-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="su2-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="460" fill="#f3f4f6" rx="14"/>
+
+  <!-- Browser window -->
+  <g filter="url(#su2-shadow)">
+    <rect x="40" y="30" width="620" height="400" rx="10" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="40" y="30" width="620" height="32" rx="10" fill="#f9fafb"/>
+  <rect x="40" y="52" width="620" height="10" fill="#f9fafb"/>
+  <circle cx="58" cy="46" r="5" fill="#ef4444"/>
+  <circle cx="74" cy="46" r="5" fill="#f59e0b"/>
+  <circle cx="90" cy="46" r="5" fill="#22c55e"/>
+  <rect x="140" y="38" width="400" height="18" rx="9" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="155" y="51" font-size="10" fill="#6b7280" font-family="system-ui, -apple-system, monospace">crowdworks.jp/register</text>
+
+  <!-- Header / brand -->
+  <rect x="40" y="62" width="620" height="40" fill="#f97316"/>
+  <text x="60" y="87" font-size="14" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">CrowdWorks</text>
+
+  <!-- Page heading -->
+  <text x="350" y="140" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">ワーカー会員登録</text>
+  <text x="350" y="162" text-anchor="middle" font-size="11" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">仕事を受けたい方はこちら（無料）</text>
+
+  <!-- Form: Email -->
+  <text x="100" y="200" font-size="12" font-weight="600" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">メールアドレス</text>
+  <rect x="100" y="208" width="500" height="36" rx="6" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="115" y="231" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, monospace">your-email@example.com</text>
+
+  <!-- Form: Password -->
+  <text x="100" y="270" font-size="12" font-weight="600" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">パスワード（8文字以上）</text>
+  <rect x="100" y="278" width="500" height="36" rx="6" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="115" y="301" font-size="14" fill="#1f2937" font-family="system-ui, -apple-system, monospace">••••••••••••</text>
+
+  <!-- Checkbox: terms -->
+  <rect x="100" y="338" width="14" height="14" rx="2" fill="white" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="125" y="350" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">利用規約・個人情報の取り扱いに同意します</text>
+
+  <!-- Submit button -->
+  <g filter="url(#su2-shadow)">
+    <rect x="100" y="370" width="500" height="42" rx="8" fill="#f97316"/>
+  </g>
+  <text x="350" y="396" text-anchor="middle" font-size="14" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">登録する</text>
+
+  <!-- Annotation arrow -->
+  <line x1="630" y1="390" x2="610" y2="390" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#su2-arrow)"/>
+  <text x="640" y="386" font-size="11" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">これを</text>
+  <text x="640" y="400" font-size="11" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">押すだけ</text>
+
+  <!-- Caption -->
+  <text x="350" y="450" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">登録ボタンを押すと認証メールが届きます。リンクをクリックすれば登録完了。</text>
+</svg>

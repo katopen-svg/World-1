@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid meet" role="img" aria-label="3ステップの全体像：試す → 直す → 本番、各ステップ1メッセージで完結">
+  <defs>
+    <filter id="soft-3step" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="240" fill="#f7f6f3" rx="14"/>
+
+  <!-- 装飾 -->
+  <text x="60" y="40" font-size="14" opacity="0.3" font-family="serif">✦</text>
+  <text x="730" y="50" font-size="14" opacity="0.3" font-family="serif">✦</text>
+
+  <!-- ━━━ ステップ1: 試す ━━━ -->
+  <g filter="url(#soft-3step)">
+    <rect x="40" y="60" width="220" height="120" rx="14" fill="#dbeafe"/>
+  </g>
+  <circle cx="76" cy="96" r="20" fill="#3b82f6"/>
+  <text x="76" y="103" text-anchor="middle" fill="white" font-size="16" font-weight="700">1</text>
+  <text x="108" y="103" font-size="20" font-weight="700" fill="#1e40af" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">試す</text>
+  <line x1="56" y1="120" x2="244" y2="120" stroke="#93c5fd"/>
+  <text x="150" y="146" text-anchor="middle" font-size="13" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">3件だけやって</text>
+  <text x="150" y="166" text-anchor="middle" font-size="13" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">と頼む</text>
+
+  <!-- 矢印1 -->
+  <line x1="270" y1="120" x2="300" y2="120" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 4"/>
+  <polygon points="300,120 292,115 292,125" fill="#9ca3af"/>
+
+  <!-- ━━━ ステップ2: 直す ━━━ -->
+  <g filter="url(#soft-3step)">
+    <rect x="310" y="60" width="220" height="120" rx="14" fill="#fef3c7"/>
+  </g>
+  <circle cx="346" cy="96" r="20" fill="#f59e0b"/>
+  <text x="346" y="103" text-anchor="middle" fill="white" font-size="16" font-weight="700">2</text>
+  <text x="378" y="103" font-size="20" font-weight="700" fill="#92400e" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">直す</text>
+  <line x1="326" y1="120" x2="514" y2="120" stroke="#fcd34d"/>
+  <text x="420" y="146" text-anchor="middle" font-size="13" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">「ここ違う」と</text>
+  <text x="420" y="166" text-anchor="middle" font-size="13" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">具体的に伝える</text>
+
+  <!-- 矢印2 -->
+  <line x1="540" y1="120" x2="570" y2="120" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 4"/>
+  <polygon points="570,120 562,115 562,125" fill="#9ca3af"/>
+
+  <!-- ━━━ ステップ3: 本番 ━━━ -->
+  <g filter="url(#soft-3step)">
+    <rect x="580" y="60" width="220" height="120" rx="14" fill="#d1fae5"/>
+  </g>
+  <circle cx="616" cy="96" r="20" fill="#10b981"/>
+  <text x="616" y="103" text-anchor="middle" fill="white" font-size="16" font-weight="700">3</text>
+  <text x="648" y="103" font-size="20" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">本番</text>
+  <line x1="596" y1="120" x2="784" y2="120" stroke="#86efac"/>
+  <text x="690" y="146" text-anchor="middle" font-size="13" fill="#064e3b" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">「全部やって」</text>
+  <text x="690" y="166" text-anchor="middle" font-size="13" fill="#064e3b" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">と頼む → 納品</text>
+
+  <!-- フッター -->
+  <text x="400" y="218" text-anchor="middle" font-size="12" fill="#6b7280" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">各ステップ＝Claude Code に1メッセージ送るだけ</text>
+</svg>

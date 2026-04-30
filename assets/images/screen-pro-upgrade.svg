@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Plansページ：FreeとProが並んで表示されPro月20ドルがおすすめ">
+  <defs>
+    <filter id="pro-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="pro-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="460" fill="#f3f4f6" rx="14"/>
+
+  <!-- App window -->
+  <g filter="url(#pro-shadow)">
+    <rect x="40" y="30" width="720" height="400" rx="10" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  </g>
+  <rect x="40" y="30" width="720" height="32" rx="10" fill="#f9fafb"/>
+  <rect x="40" y="52" width="720" height="10" fill="#f9fafb"/>
+  <circle cx="58" cy="46" r="5" fill="#ef4444"/>
+  <circle cx="74" cy="46" r="5" fill="#f59e0b"/>
+  <circle cx="90" cy="46" r="5" fill="#22c55e"/>
+  <text x="400" y="51" text-anchor="middle" font-size="11" font-weight="600" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Claude Code · Plans</text>
+
+  <!-- Heading -->
+  <text x="400" y="100" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">プランを選ぶ</text>
+  <text x="400" y="120" text-anchor="middle" font-size="11" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">副業で月100件こなすなら Pro がおすすめ</text>
+
+  <!-- Free plan card -->
+  <rect x="80" y="150" width="220" height="240" rx="10" fill="white" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="190" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Free</text>
+  <text x="190" y="215" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">$0</text>
+  <text x="190" y="232" text-anchor="middle" font-size="10" fill="#9ca3af" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">/ month</text>
+
+  <text x="100" y="265" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ お試しに最適</text>
+  <text x="100" y="285" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 1日数件のリサーチ</text>
+  <text x="100" y="305" font-size="11" fill="#9ca3af" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✗ 100件案件は途中で停止</text>
+  <text x="100" y="325" font-size="11" fill="#9ca3af" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✗ 混雑時は待機あり</text>
+
+  <rect x="100" y="350" width="180" height="32" rx="6" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="190" y="371" text-anchor="middle" font-size="12" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">現在のプラン</text>
+
+  <!-- Pro plan card (highlighted) -->
+  <g filter="url(#pro-shadow)">
+    <rect x="320" y="140" width="240" height="260" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+  </g>
+  <!-- Recommended badge -->
+  <g filter="url(#pro-shadow)">
+    <rect x="380" y="124" width="120" height="26" rx="13" fill="#d97706"/>
+  </g>
+  <text x="440" y="142" text-anchor="middle" font-size="11" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⭐ おすすめ</text>
+
+  <text x="440" y="180" text-anchor="middle" font-size="16" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Pro</text>
+  <text x="440" y="220" text-anchor="middle" font-size="28" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">$20</text>
+  <text x="440" y="240" text-anchor="middle" font-size="11" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">/ month（約3,000円）</text>
+
+  <text x="340" y="270" font-size="12" font-weight="600" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 月100件案件を 2〜3本</text>
+  <text x="340" y="292" font-size="12" font-weight="600" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 優先アクセス（混雑なし）</text>
+  <text x="340" y="314" font-size="12" font-weight="600" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 長文・複雑タスク対応</text>
+  <text x="340" y="336" font-size="12" font-weight="600" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ いつでも1クリックで解約</text>
+
+  <!-- CTA button -->
+  <g filter="url(#pro-shadow)">
+    <rect x="340" y="356" width="200" height="36" rx="8" fill="#ea580c"/>
+  </g>
+  <text x="440" y="379" text-anchor="middle" font-size="13" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Upgrade to Pro</text>
+
+  <!-- Annotation arrow -->
+  <line x1="660" y1="375" x2="555" y2="375" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#pro-arrow)"/>
+  <text x="700" y="370" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">これを押す</text>
+  <text x="700" y="388" text-anchor="middle" font-size="10" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ カード情報入力へ</text>
+
+  <!-- Note about Max plan (mention but don't show) -->
+  <text x="400" y="420" text-anchor="middle" font-size="10" fill="#9ca3af" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">※ もっと使う人向けに Max プランもあります（後でアップグレードOK）</text>
+
+  <!-- Caption -->
+  <text x="400" y="450" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">設定 → Plans から開ける画面</text>
+</svg>

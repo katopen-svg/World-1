@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" preserveAspectRatio="xMidYMid meet" role="img" aria-label="w1-2 で学ぶ5つのアクション。各ステップ + 通し攻略 + おまけ">
+  <defs>
+    <filter id="soft-w12" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="220" fill="#f7f6f3" rx="14"/>
+
+  <!-- タイトル -->
+  <text x="400" y="34" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">w1-2 で学ぶこと ｜ 3ステップ + 通し攻略</text>
+
+  <!-- パス -->
+  <line x1="100" y1="115" x2="640" y2="115" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 5"/>
+  <line x1="640" y1="115" x2="700" y2="115" stroke="#d1d5db" stroke-width="2" stroke-dasharray="2 4" opacity="0.5"/>
+
+  <!-- ① 試す -->
+  <g filter="url(#soft-w12)">
+    <circle cx="140" cy="115" r="26" fill="#3b82f6"/>
+  </g>
+  <text x="140" y="122" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="system-ui, -apple-system, sans-serif">1</text>
+  <text x="140" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">試す</text>
+  <text x="140" y="180" text-anchor="middle" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">3件だけ頼む</text>
+
+  <!-- ② 直す -->
+  <g filter="url(#soft-w12)">
+    <circle cx="280" cy="115" r="26" fill="#f59e0b"/>
+  </g>
+  <text x="280" y="122" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="system-ui, -apple-system, sans-serif">2</text>
+  <text x="280" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">直す</text>
+  <text x="280" y="180" text-anchor="middle" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">違う所を伝える</text>
+
+  <!-- ③ 本番 -->
+  <g filter="url(#soft-w12)">
+    <circle cx="420" cy="115" r="26" fill="#10b981"/>
+  </g>
+  <text x="420" y="122" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="system-ui, -apple-system, sans-serif">3</text>
+  <text x="420" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">本番</text>
+  <text x="420" y="180" text-anchor="middle" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">全部やる</text>
+
+  <!-- ④ 通し攻略 -->
+  <g filter="url(#soft-w12)">
+    <circle cx="570" cy="115" r="30" fill="#8b5cf6"/>
+  </g>
+  <text x="570" y="122" text-anchor="middle" fill="white" font-size="22">🎯</text>
+  <text x="570" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">通し攻略</text>
+  <text x="570" y="186" text-anchor="middle" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">模擬案件1件やる</text>
+
+  <!-- (おまけ) メモ -->
+  <g filter="url(#soft-w12)" opacity="0.7">
+    <rect x="680" y="100" width="92" height="32" rx="16" fill="#9ca3af"/>
+  </g>
+  <text x="726" y="120" text-anchor="middle" fill="white" font-size="11" font-weight="700" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">おまけ</text>
+  <text x="726" y="156" text-anchor="middle" font-size="11" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">メモを残す</text>
+  <text x="726" y="172" text-anchor="middle" font-size="10" fill="#9ca3af" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">（任意）</text>
+</svg>

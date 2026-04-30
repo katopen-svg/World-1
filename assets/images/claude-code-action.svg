@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Claude Code の動き：指示を投げると Claude Code が手を動かして、完了したリストやファイルが返ってくる">
+  <defs>
+    <radialGradient id="cc-orange" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fdba74"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </radialGradient>
+    <filter id="soft-cc" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="240" fill="#f7f6f3" rx="14"/>
+
+  <!-- 装飾 sparkle -->
+  <text x="50" y="35" font-size="14" opacity="0.3" font-family="serif">✦</text>
+  <text x="730" y="50" font-size="14" opacity="0.3" font-family="serif">✦</text>
+  <text x="380" y="220" font-size="12" opacity="0.25" font-family="serif">✦</text>
+
+  <!-- ━━━ 入力カード（左） ━━━ -->
+  <g filter="url(#soft-cc)">
+    <rect x="40" y="60" width="240" height="120" rx="10" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  </g>
+  <text x="60" y="90" font-size="11" font-weight="700" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">あなたの指示</text>
+  <text x="60" y="120" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">「楽天で評価4以上の</text>
+  <text x="60" y="140" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">家電を100件取って」</text>
+
+  <!-- 矢印1 -->
+  <line x1="290" y1="120" x2="350" y2="120" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 4"/>
+  <polygon points="350,120 342,115 342,125" fill="#9ca3af"/>
+
+  <!-- ━━━ Claude Code（中央） ━━━ -->
+  <g filter="url(#soft-cc)">
+    <circle cx="400" cy="120" r="44" fill="url(#cc-orange)"/>
+  </g>
+  <text x="400" y="130" text-anchor="middle" font-size="32">💻</text>
+  <text x="400" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Claude Code</text>
+  <text x="400" y="204" text-anchor="middle" font-size="11" fill="#92400e" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">手を動かす</text>
+
+  <!-- 矢印2 -->
+  <line x1="450" y1="120" x2="510" y2="120" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 4"/>
+  <polygon points="510,120 502,115 502,125" fill="#9ca3af"/>
+
+  <!-- ━━━ 出力カード（右） ━━━ -->
+  <g filter="url(#soft-cc)">
+    <rect x="520" y="60" width="240" height="120" rx="10" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  </g>
+  <text x="540" y="90" font-size="11" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">完了</text>
+  <text x="540" y="116" font-size="13" fill="#064e3b" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 100件取得</text>
+  <text x="540" y="138" font-size="13" fill="#064e3b" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ CSV に整形</text>
+  <text x="540" y="160" font-size="13" fill="#064e3b" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ スプシに書き込み</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Windows のエクスプローラーで右クリック→新規→フォルダー を選ぶ画面イメージ">
+  <defs>
+    <filter id="win-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="3" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景（Windows っぽい水色） -->
+  <rect width="600" height="360" fill="#cffafe" rx="12"/>
+
+  <!-- エクスプローラーウィンドウ -->
+  <g filter="url(#win-shadow)">
+    <rect x="40" y="40" width="520" height="280" rx="6" fill="#fafafa"/>
+  </g>
+
+  <!-- タイトルバー -->
+  <rect x="40" y="40" width="520" height="36" rx="6" fill="#0078d4"/>
+  <rect x="40" y="62" width="520" height="14" fill="#0078d4"/>
+  <text x="60" y="62" font-size="12" fill="white" font-weight="600" font-family="system-ui, sans-serif">🗂️ デスクトップ</text>
+  <!-- ウィンドウコントロール -->
+  <text x="498" y="62" font-size="14" fill="white">─</text>
+  <text x="518" y="62" font-size="14" fill="white">▢</text>
+  <text x="540" y="62" font-size="14" fill="white">✕</text>
+
+  <!-- ツールバー -->
+  <rect x="40" y="76" width="520" height="32" fill="#f3f4f6"/>
+  <text x="60" y="96" font-size="13" fill="#6b7280">＋ 新規</text>
+  <text x="130" y="96" font-size="13" fill="#6b7280">⊞ 表示</text>
+
+  <!-- ファイル一覧エリア -->
+  <rect x="40" y="108" width="520" height="212" fill="white"/>
+
+  <!-- 右クリックメニュー -->
+  <g filter="url(#win-shadow)">
+    <rect x="160" y="140" width="220" height="160" rx="6" fill="white" stroke="#d1d5db"/>
+  </g>
+  <text x="180" y="166" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">表示</text>
+  <text x="180" y="190" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">並べ替え</text>
+  <line x1="170" y1="202" x2="370" y2="202" stroke="#e5e7eb"/>
+  <!-- ハイライト：新規 -->
+  <rect x="164" y="210" width="212" height="28" rx="3" fill="#0078d4"/>
+  <text x="180" y="229" font-size="13" fill="white" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">新規</text>
+  <text x="362" y="229" font-size="14" fill="white">▶</text>
+
+  <!-- サブメニュー -->
+  <g filter="url(#win-shadow)">
+    <rect x="380" y="200" width="180" height="120" rx="6" fill="white" stroke="#d1d5db"/>
+  </g>
+  <!-- ハイライト：フォルダー -->
+  <rect x="384" y="208" width="172" height="28" rx="3" fill="#0078d4"/>
+  <text x="400" y="227" font-size="13" fill="white" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📁 フォルダー</text>
+  <text x="400" y="252" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📄 テキスト文書</text>
+  <text x="400" y="276" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🔗 ショートカット</text>
+
+  <!-- 注釈 -->
+  <text x="300" y="345" text-anchor="middle" font-size="12" fill="#0e7490" font-weight="700" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🪟 Windows：右クリック →「新規」→「フォルダー」</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Claude Code デスクトップアプリのUIイメージ。サイドバーにプロジェクト一覧、メイン領域にチャット画面、下部に入力欄">
+  <defs>
+    <filter id="window-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f7f6f3" rx="14"/>
+
+  <!-- ━━━ ウィンドウフレーム ━━━ -->
+  <g filter="url(#window-shadow)">
+    <rect x="40" y="30" width="720" height="440" rx="10" fill="#1f2937"/>
+  </g>
+
+  <!-- タイトルバー -->
+  <rect x="40" y="30" width="720" height="36" rx="10" fill="#374151"/>
+  <rect x="40" y="56" width="720" height="10" fill="#374151"/>
+  <!-- 信号機 -->
+  <circle cx="60" cy="48" r="6" fill="#ef4444"/>
+  <circle cx="78" cy="48" r="6" fill="#fbbf24"/>
+  <circle cx="96" cy="48" r="6" fill="#10b981"/>
+  <!-- アプリ名 -->
+  <text x="400" y="53" text-anchor="middle" fill="#d1d5db" font-size="12" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Claude Code</text>
+
+  <!-- ━━━ サイドバー ━━━ -->
+  <rect x="40" y="66" width="180" height="404" fill="#111827"/>
+  <text x="60" y="100" fill="#6b7280" font-size="10" font-weight="700" font-family="system-ui, sans-serif" letter-spacing="1">PROJECTS</text>
+  <!-- 選択中の項目 -->
+  <rect x="48" y="112" width="164" height="32" rx="6" fill="#1e40af" opacity="0.4"/>
+  <text x="60" y="133" fill="#93c5fd" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📁 案件001_楽天</text>
+  <!-- 他の項目 -->
+  <text x="60" y="170" fill="#9ca3af" font-size="13" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📁 案件002_食べログ</text>
+  <text x="60" y="200" fill="#9ca3af" font-size="13" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📁 練習</text>
+  <text x="60" y="230" fill="#9ca3af" font-size="13" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📁 _templates</text>
+  <!-- 新規追加 -->
+  <text x="60" y="450" fill="#6b7280" font-size="12" font-family="system-ui, -apple-system, sans-serif">＋ 新規プロジェクト</text>
+
+  <!-- ━━━ メイン: チャットエリア ━━━ -->
+  <rect x="220" y="66" width="540" height="404" fill="#1f2937"/>
+
+  <!-- ユーザーメッセージ（右側） -->
+  <rect x="430" y="100" width="310" height="48" rx="10" fill="#3b82f6"/>
+  <text x="445" y="120" fill="white" font-size="12" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">楽天で評価4以上の家電を</text>
+  <text x="445" y="138" fill="white" font-size="12" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">100件リストアップして</text>
+
+  <!-- AIラベル -->
+  <text x="240" y="190" fill="#10b981" font-size="12" font-weight="700" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">💬 Claude</text>
+
+  <!-- AI応答メッセージ（左側） -->
+  <rect x="240" y="200" width="400" height="120" rx="10" fill="#111827"/>
+  <text x="256" y="226" fill="#e5e7eb" font-size="12" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">わかりました。100件取得します。</text>
+  <text x="256" y="252" fill="#9ca3af" font-size="11" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📋 リサーチ実行中...</text>
+  <!-- プログレスバー -->
+  <rect x="256" y="266" width="350" height="8" rx="4" fill="#374151"/>
+  <rect x="256" y="266" width="280" height="8" rx="4" fill="#10b981"/>
+  <text x="256" y="298" fill="#10b981" font-size="11" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 商品リスト.csv に100件保存しました</text>
+
+  <!-- ━━━ 入力欄 ━━━ -->
+  <rect x="240" y="410" width="500" height="44" rx="22" fill="#374151"/>
+  <text x="260" y="437" fill="#6b7280" font-size="13" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">メッセージを入力...</text>
+  <circle cx="720" cy="432" r="14" fill="#3b82f6"/>
+  <text x="720" y="438" text-anchor="middle" fill="white" font-size="14" font-weight="700">↑</text>
+</svg>

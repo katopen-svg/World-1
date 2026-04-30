@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" preserveAspectRatio="xMidYMid meet" role="img" aria-label="2つの道具のフロー：あなた→Claude Code（AI実行係）→スプレッドシート（納品場所）→クライアント">
+  <defs>
+    <filter id="soft-tools" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="880" height="280" fill="#f7f6f3" rx="14"/>
+
+  <!-- ━━━ ① あなた ━━━ -->
+  <g filter="url(#soft-tools)">
+    <circle cx="55" cy="140" r="30" fill="#fbbf24"/>
+  </g>
+  <text x="55" y="150" text-anchor="middle" font-size="28">👤</text>
+  <text x="55" y="205" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">あなた</text>
+
+  <!-- 矢印1: 指示 -->
+  <line x1="95" y1="140" x2="170" y2="140" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 4"/>
+  <polygon points="170,140 162,135 162,145" fill="#9ca3af"/>
+  <text x="132" y="128" text-anchor="middle" font-size="11" fill="#4b5563" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">指示</text>
+
+  <!-- ━━━ ② Claude Code カード ━━━ -->
+  <g filter="url(#soft-tools)">
+    <rect x="170" y="60" width="240" height="160" rx="12" fill="#dbeafe"/>
+  </g>
+  <text x="290" y="100" text-anchor="middle" font-size="32">💻</text>
+  <text x="290" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#1e40af" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Claude Code</text>
+  <text x="290" y="150" text-anchor="middle" font-size="12" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">AI 実行係</text>
+  <line x1="200" y1="166" x2="380" y2="166" stroke="#93c5fd" stroke-width="1"/>
+  <text x="290" y="186" text-anchor="middle" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">指示通りにリサーチ実行</text>
+  <text x="290" y="204" text-anchor="middle" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">データの整形・書き込み</text>
+
+  <!-- 矢印2: 書き込み -->
+  <line x1="420" y1="140" x2="490" y2="140" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 4"/>
+  <polygon points="490,140 482,135 482,145" fill="#9ca3af"/>
+  <text x="455" y="128" text-anchor="middle" font-size="11" fill="#4b5563" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">書き込み</text>
+
+  <!-- ━━━ ③ スプレッドシート カード ━━━ -->
+  <g filter="url(#soft-tools)">
+    <rect x="490" y="60" width="240" height="160" rx="12" fill="#d1fae5"/>
+  </g>
+  <text x="610" y="100" text-anchor="middle" font-size="32">📊</text>
+  <text x="610" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">スプレッドシート</text>
+  <text x="610" y="150" text-anchor="middle" font-size="12" fill="#064e3b" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">納品場所</text>
+  <line x1="520" y1="166" x2="700" y2="166" stroke="#86efac" stroke-width="1"/>
+  <text x="610" y="186" text-anchor="middle" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">成果物が貯まる</text>
+  <text x="610" y="204" text-anchor="middle" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">URLでクライアントに渡す</text>
+
+  <!-- 矢印3: 納品 -->
+  <line x1="740" y1="140" x2="800" y2="140" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 4"/>
+  <polygon points="800,140 792,135 792,145" fill="#9ca3af"/>
+  <text x="770" y="128" text-anchor="middle" font-size="11" fill="#4b5563" font-weight="600" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">納品</text>
+
+  <!-- ━━━ ④ クライアント ━━━ -->
+  <g filter="url(#soft-tools)">
+    <circle cx="828" cy="140" r="28" fill="#a78bfa"/>
+  </g>
+  <text x="828" y="150" text-anchor="middle" font-size="22">🤝</text>
+  <text x="828" y="205" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">クライアント</text>
+</svg>

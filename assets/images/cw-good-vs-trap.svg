@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540" preserveAspectRatio="xMidYMid meet" role="img" aria-label="クラウドワークス案件の良い案件と地雷案件を並べて比較：良い案件は仕様明確・★4.5以上、地雷案件はZoom面談要求・評価低・煽り文">
+  <defs>
+    <filter id="vt-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="540" fill="#f9fafb" rx="14"/>
+
+  <!-- Title -->
+  <text x="550" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⚖️ 良い案件 vs 地雷案件 — 並べて見ると一目瞭然</text>
+
+  <!-- ============== LEFT: Good case ============== -->
+
+  <!-- Banner -->
+  <g filter="url(#vt-shadow)">
+    <rect x="40" y="70" width="500" height="40" rx="8" fill="#22c55e"/>
+  </g>
+  <text x="290" y="96" text-anchor="middle" font-size="15" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✅ 取りに行くべき良い案件</text>
+
+  <!-- Card -->
+  <g filter="url(#vt-shadow)">
+    <rect x="40" y="120" width="500" height="380" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="155" font-size="14" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">楽天市場 キッチン雑貨ショップ100社調査</text>
+
+  <!-- Description -->
+  <text x="60" y="180" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">指定カテゴリ内のショップ名・運営会社・公式URL</text>
+  <text x="60" y="196" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">を取得していただきます。</text>
+  <text x="60" y="218" font-size="11" font-weight="700" fill="#16a34a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📄 詳細マニュアル提供あり / サンプルあり</text>
+
+  <!-- Money & specs -->
+  <rect x="60" y="240" width="100" height="28" rx="4" fill="#fef3c7"/>
+  <text x="110" y="259" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥2,000</text>
+  <text x="180" y="259" font-size="12" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📦 100件　📅 5日以内</text>
+
+  <!-- Client info -->
+  <rect x="60" y="285" width="460" height="40" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="75" y="310" font-size="12" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">★ 4.8（発注実績 85件） — 株式会社サンプル</text>
+
+  <!-- Applicants -->
+  <text x="60" y="350" font-size="12" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">👤 提案中: <tspan font-weight="700" fill="#16a34a">8人</tspan>（程よい競合）</text>
+
+  <!-- Good signs checklist -->
+  <text x="60" y="385" font-size="12" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 良いサイン</text>
+  <text x="70" y="405" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ タイトル＆仕様が具体的（カテゴリ・件数明記）</text>
+  <text x="70" y="423" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ ★4.5以上＋発注実績10件以上</text>
+  <text x="70" y="441" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ マニュアル/サンプル提供あり</text>
+  <text x="70" y="459" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ 提案中5〜15人で程よい競合</text>
+  <text x="70" y="477" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ 納期に余裕（即日要求なし）</text>
+
+  <!-- ============== RIGHT: Trap case ============== -->
+
+  <!-- Banner -->
+  <g filter="url(#vt-shadow)">
+    <rect x="560" y="70" width="500" height="40" rx="8" fill="#dc2626"/>
+  </g>
+  <text x="810" y="96" text-anchor="middle" font-size="15" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⚠️ 避けるべき地雷案件</text>
+
+  <!-- Card -->
+  <g filter="url(#vt-shadow)">
+    <rect x="560" y="120" width="500" height="380" rx="10" fill="white" stroke="#dc2626" stroke-width="2"/>
+  </g>
+
+  <!-- Title -->
+  <text x="580" y="155" font-size="14" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">【簡単】お小遣い稼ぎ感覚でできる作業 💦</text>
+
+  <!-- Description -->
+  <text x="580" y="180" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">やる気のある方、継続的にお願いしたいです✨</text>
+  <text x="580" y="196" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">詳しくはお話できる方とお話しましょう。</text>
+  <text x="580" y="218" font-size="11" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📞 まずZoom面談でお話しましょう（モニター募集）</text>
+
+  <!-- Money & specs -->
+  <rect x="580" y="240" width="100" height="28" rx="4" fill="#fef2f2"/>
+  <text x="630" y="259" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥500</text>
+  <text x="700" y="259" font-size="12" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📦 件数記載なし　📅 即日</text>
+
+  <!-- Client info -->
+  <rect x="580" y="285" width="460" height="40" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="595" y="310" font-size="12" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">★ 2.3（発注実績 0件・新規） — 個人</text>
+
+  <!-- Applicants -->
+  <text x="580" y="350" font-size="12" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">👤 提案中: <tspan font-weight="700" fill="#dc2626">47人</tspan>（激戦＆怪しい）</text>
+
+  <!-- Bad signs checklist -->
+  <text x="580" y="385" font-size="12" font-weight="700" fill="#7f1d1d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✗ 避けるべきサイン</text>
+  <text x="590" y="405" font-size="11" fill="#b91c1c" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ タイトル＆本文が煽り（「お小遣い稼ぎ」「やる気」）</text>
+  <text x="590" y="423" font-size="11" fill="#b91c1c" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ <tspan font-weight="700">いきなりZoom面談・モニター募集</tspan>（スクール勧誘の可能性大）</text>
+  <text x="590" y="441" font-size="11" fill="#b91c1c" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ <tspan font-weight="700">クライアント評価★3.5未満</tspan>or 発注実績0件</text>
+  <text x="590" y="459" font-size="11" fill="#b91c1c" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ 件数・仕様が書かれていない</text>
+  <text x="590" y="477" font-size="11" fill="#b91c1c" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・ 単価が極端に低い（時給100〜300円）</text>
+
+  <!-- Footer caption -->
+  <text x="550" y="525" text-anchor="middle" font-size="12" fill="#4b5563" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">案件文は「書かれていることだけでなく、書かれていないこと」も判断材料になる</text>
+</svg>

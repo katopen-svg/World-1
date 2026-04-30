@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid meet" role="img" aria-label="クラウドワークスの案件検索画面のモック：リサーチ案件のリストと、それぞれの報酬・応募人数を表示">
+  <defs>
+    <filter id="cwm-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="cwm-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="480" fill="#f3f4f6" rx="14"/>
+
+  <!-- Browser window -->
+  <g filter="url(#cwm-shadow)">
+    <rect x="40" y="30" width="720" height="420" rx="10" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="40" y="30" width="720" height="32" rx="10" fill="#f9fafb"/>
+  <rect x="40" y="52" width="720" height="10" fill="#f9fafb"/>
+  <circle cx="58" cy="46" r="5" fill="#ef4444"/>
+  <circle cx="74" cy="46" r="5" fill="#f59e0b"/>
+  <circle cx="90" cy="46" r="5" fill="#22c55e"/>
+  <rect x="140" y="38" width="500" height="18" rx="9" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="155" y="51" font-size="10" fill="#6b7280" font-family="system-ui, -apple-system, monospace">crowdworks.jp/public/jobs/category/19</text>
+
+  <!-- Header / brand -->
+  <rect x="40" y="62" width="720" height="40" fill="#f97316"/>
+  <text x="60" y="87" font-size="14" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">CrowdWorks</text>
+  <text x="180" y="87" font-size="11" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">仕事を探す</text>
+  <text x="280" y="87" font-size="11" fill="white" opacity="0.7" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">メッセージ</text>
+  <text x="380" y="87" font-size="11" fill="white" opacity="0.7" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">マイページ</text>
+
+  <!-- Page heading -->
+  <text x="60" y="130" font-size="14" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📋 データ収集・リサーチ案件</text>
+  <text x="650" y="130" text-anchor="end" font-size="11" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">432件 が見つかりました</text>
+
+  <!-- Job card 1 -->
+  <rect x="60" y="150" width="680" height="80" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="80" y="175" font-size="13" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">楽天市場のキッチン雑貨ショップ100社調査</text>
+  <text x="80" y="200" font-size="11" fill="#4b5563" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">指定カテゴリ内のショップ名・運営会社・公式URLを取得していただきます。</text>
+  <rect x="80" y="208" width="80" height="20" rx="3" fill="#fef3c7"/>
+  <text x="120" y="222" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥1,500</text>
+  <text x="180" y="222" font-size="10" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📅 即日OK</text>
+  <text x="260" y="222" font-size="10" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">👤 提案中: 12人</text>
+  <text x="370" y="222" font-size="10" fill="#22c55e" font-weight="700" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">★ 評価: 4.8（クライアント）</text>
+
+  <!-- Apply button -->
+  <g filter="url(#cwm-shadow)">
+    <rect x="640" y="180" width="80" height="32" rx="6" fill="#f97316"/>
+  </g>
+  <text x="680" y="201" text-anchor="middle" font-size="12" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">応募する</text>
+
+  <!-- Annotation arrow on Apply button -->
+  <line x1="680" y1="240" x2="680" y2="216" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#cwm-arrow)"/>
+  <text x="680" y="256" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">これを押すまでに</text>
+  <text x="680" y="270" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">提案文を書く</text>
+
+  <!-- Job card 2 (dimmed for context) -->
+  <rect x="60" y="290" width="680" height="60" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1" opacity="0.7"/>
+  <text x="80" y="312" font-size="12" font-weight="700" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">化粧品ブランドの企業情報リスト作成（500件）</text>
+  <rect x="80" y="320" width="80" height="20" rx="3" fill="#fef3c7"/>
+  <text x="120" y="334" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥7,500</text>
+  <text x="180" y="334" font-size="10" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">👤 提案中: 8人</text>
+
+  <!-- Job card 3 (dimmed for context) -->
+  <rect x="60" y="362" width="680" height="60" rx="6" fill="white" stroke="#e5e7eb" stroke-width="1" opacity="0.5"/>
+  <text x="80" y="384" font-size="12" font-weight="700" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">飲食店リスト作成（東京23区、200店舗）</text>
+  <rect x="80" y="392" width="80" height="20" rx="3" fill="#fef3c7"/>
+  <text x="120" y="406" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥3,000</text>
+  <text x="180" y="406" font-size="10" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">👤 提案中: 15人</text>
+
+  <!-- Caption -->
+  <text x="400" y="468" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">クラウドワークスの「データ収集・リサーチ」カテゴリ：1案件 1,500〜7,500円 が中心相場</text>
+</svg>

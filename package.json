@@ -1,0 +1,16 @@
+{
+  "name": "ai-lesson03",
+  "version": "1.0.0",
+  "description": "Notion/Medium 風の HTML 46ページで構成される World1 講座。受講生は Web 公開された URL からブラウザで読む。",
+  "main": "build.mjs",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "marked": "^18.0.2"
+  }
+}

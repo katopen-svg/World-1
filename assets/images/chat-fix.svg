@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" preserveAspectRatio="xMidYMid meet" role="img" aria-label="直すフェーズの会話例：3件のうち1件が条件外（評価3.8）→「4.0以上にして」と指摘→修正された3件が返ってくる">
+  <defs>
+    <radialGradient id="claude-orange-2" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fdba74"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </radialGradient>
+    <filter id="bubble-shadow-2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.12"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="360" fill="#f7f6f3" rx="14"/>
+
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">直すフェーズの会話イメージ</text>
+
+  <!-- ━━━ 吹き出し1: あなた（指摘） ━━━ -->
+  <g filter="url(#bubble-shadow-2)">
+    <rect x="280" y="56" width="490" height="62" rx="22" fill="#3b82f6"/>
+  </g>
+  <text x="305" y="86" font-size="13" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">株式会社Bが評価3.8で条件外。</text>
+  <text x="305" y="106" font-size="13" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">4.0以上だけにして</text>
+
+  <!-- ━━━ 吹き出し2: Claude（確認） ━━━ -->
+  <g filter="url(#bubble-shadow-2)">
+    <circle cx="60" cy="170" r="22" fill="url(#claude-orange-2)"/>
+  </g>
+  <text x="60" y="179" text-anchor="middle" font-size="18">💻</text>
+
+  <g filter="url(#bubble-shadow-2)">
+    <rect x="92" y="146" width="450" height="60" rx="22" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  </g>
+  <text x="116" y="174" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">確認しました。条件を見直して</text>
+  <text x="116" y="194" font-size="13" fill="#1f2937" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">もう一度3件取り直しますね</text>
+
+  <!-- ━━━ 吹き出し3: Claude（修正完了） ━━━ -->
+  <g filter="url(#bubble-shadow-2)">
+    <circle cx="60" cy="290" r="22" fill="url(#claude-orange-2)"/>
+  </g>
+  <text x="60" y="299" text-anchor="middle" font-size="18">💻</text>
+
+  <g filter="url(#bubble-shadow-2)">
+    <rect x="92" y="244" width="490" height="100" rx="20" fill="white" stroke="#10b981" stroke-width="2"/>
+  </g>
+  <text x="116" y="270" font-size="13" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">✓ 直しました（全部4.0以上）</text>
+  <text x="124" y="294" font-size="12" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・株式会社A（評価4.5）</text>
+  <text x="124" y="313" font-size="12" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・株式会社D（評価4.6）</text>
+  <text x="124" y="332" font-size="12" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・株式会社E（評価4.8）</text>
+</svg>

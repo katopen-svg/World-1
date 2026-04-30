@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid meet" role="img" aria-label="運営から共有される提出用スプレッドシートのテンプレート：上部にメタ情報、下にデータヘッダーと100行のデータ欄">
+  <defs>
+    <filter id="sheet-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="480" fill="#f7f6f3" rx="14"/>
+
+  <!-- スプシウィンドウ -->
+  <g filter="url(#sheet-shadow)">
+    <rect x="40" y="30" width="720" height="420" rx="8" fill="white" stroke="#86efac" stroke-width="2"/>
+  </g>
+
+  <!-- ファイル名タブ -->
+  <rect x="40" y="30" width="720" height="32" rx="8" fill="#dcfce7"/>
+  <rect x="40" y="54" width="720" height="8" fill="#dcfce7"/>
+  <text x="58" y="51" font-size="12" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📊 楽天キッチン雑貨ショップ100社調査.gsheet</text>
+
+  <!-- ━━━ 上段：メタ情報エリア ━━━ -->
+  <text x="58" y="86" font-size="11" font-weight="700" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">▼ 提出者情報を記入</text>
+
+  <!-- メタ情報の表 -->
+  <line x1="200" y1="92" x2="200" y2="220" stroke="#bbf7d0" stroke-width="1"/>
+
+  <!-- 案件名 -->
+  <rect x="40" y="98" width="160" height="24" fill="#f0fdf4"/>
+  <text x="58" y="115" font-size="11" font-weight="600" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">案件名</text>
+  <text x="218" y="115" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">楽天キッチン雑貨ショップ100社調査</text>
+
+  <!-- 提出者 -->
+  <rect x="40" y="122" width="160" height="24" fill="#f0fdf4"/>
+  <text x="58" y="139" font-size="11" font-weight="600" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">提出者</text>
+  <text x="218" y="139" font-size="11" fill="#9ca3af" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">（記入する）</text>
+
+  <!-- 完了日時 -->
+  <rect x="40" y="146" width="160" height="24" fill="#f0fdf4"/>
+  <text x="58" y="163" font-size="11" font-weight="600" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">完了日時</text>
+  <text x="218" y="163" font-size="11" fill="#9ca3af" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">（記入する）</text>
+
+  <!-- 使ったモード -->
+  <rect x="40" y="170" width="160" height="24" fill="#f0fdf4"/>
+  <text x="58" y="187" font-size="11" font-weight="600" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">使ったモード</text>
+  <text x="218" y="187" font-size="11" fill="#9ca3af" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">（ノーマル / 初心者）</text>
+
+  <!-- 詰まった所のメモ -->
+  <rect x="40" y="194" width="160" height="24" fill="#f0fdf4"/>
+  <text x="58" y="211" font-size="11" font-weight="600" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">詰まった所のメモ</text>
+  <text x="218" y="211" font-size="11" fill="#9ca3af" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">（あれば記入）</text>
+
+  <!-- 区切り -->
+  <rect x="40" y="232" width="720" height="20" fill="#f9fafb"/>
+  <text x="58" y="247" font-size="11" font-weight="700" fill="#6b7280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">▼ ここから下に100件分のデータを記入（Claude Code が自動で書き込み）</text>
+
+  <!-- ━━━ 下段：データテーブル ━━━ -->
+  <!-- ヘッダー -->
+  <rect x="40" y="252" width="720" height="30" fill="#dcfce7"/>
+  <text x="58" y="272" font-size="11" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">抽出カテゴリ</text>
+  <text x="218" y="272" font-size="11" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">ショップ名</text>
+  <text x="378" y="272" font-size="11" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">運営会社名</text>
+  <text x="558" y="272" font-size="11" font-weight="700" fill="#065f46" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">企業公式URL</text>
+
+  <!-- 縦線 -->
+  <line x1="200" y1="252" x2="200" y2="450" stroke="#bbf7d0" stroke-width="1"/>
+  <line x1="360" y1="252" x2="360" y2="450" stroke="#bbf7d0" stroke-width="1"/>
+  <line x1="540" y1="252" x2="540" y2="450" stroke="#bbf7d0" stroke-width="1"/>
+
+  <!-- 例の行 -->
+  <rect x="40" y="282" width="720" height="26" fill="white"/>
+  <text x="58" y="299" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">キッチン雑貨</text>
+  <text x="218" y="299" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">キッチンプラス</text>
+  <text x="378" y="299" font-size="11" fill="#374151" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">株式会社サンプルキッチン</text>
+  <text x="558" y="299" font-size="11" fill="#3b82f6" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">https://sample-kitchen.co.jp</text>
+
+  <!-- 空行 -->
+  <rect x="40" y="308" width="720" height="26" fill="#fafffe"/>
+  <rect x="40" y="334" width="720" height="26" fill="white"/>
+  <rect x="40" y="360" width="720" height="26" fill="#fafffe"/>
+  <rect x="40" y="386" width="720" height="26" fill="white"/>
+  <rect x="40" y="412" width="720" height="26" fill="#fafffe"/>
+
+  <!-- 注釈 -->
+  <text x="400" y="442" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">… このシートに 100 行分が自動で書き込まれます</text>
+</svg>
