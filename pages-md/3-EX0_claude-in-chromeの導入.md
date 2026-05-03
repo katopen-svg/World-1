@@ -126,7 +126,7 @@ Chromeの右上、アドレスバーの右隣あたりに、<strong>Cマーク�
 <span class="step-card__num">2</span><strong>「Connect」を押す</strong>
 
 「ブラウザに名前をつけてください」と聞かれることがあります。<br>
-<strong>「<code>Browser 1</code>」や「<code>加藤のChrome</code>」</strong>のように、自分でわかる名前でOK。
+<strong>「<code>Browser 1</code>」や「<code>My Chrome</code>」</strong>のように、自分でわかる名前でOK。
 </div>
 
 <div class="step-card">

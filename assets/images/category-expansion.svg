@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid meet" role="img" aria-label="案件カテゴリを広げる3つの方向：A.モール拡張（楽天→Amazon/Yahoo）、B.業界拡張（食品→美容/家電/不動産）、C.専門特化（特定業界の深掘り）">
+  <defs>
+    <filter id="ce-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="480" fill="#eff6ff" rx="14"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🌐 カテゴリを広げる3つの方向</text>
+  <text x="600" y="64" text-anchor="middle" font-size="12" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">「楽天キッチン雑貨だけ」を脱して、案件供給と単価帯を広げる</text>
+
+  <!-- Pattern A: モール拡張 -->
+  <g filter="url(#ce-shadow)">
+    <rect x="40" y="100" width="360" height="340" rx="14" fill="white" stroke="#3b82f6" stroke-width="3"/>
+  </g>
+  <rect x="40" y="100" width="360" height="50" rx="14" fill="#dbeafe"/>
+  <rect x="40" y="125" width="360" height="25" fill="#dbeafe"/>
+  <text x="220" y="132" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">A｜モール拡張</text>
+  <text x="220" y="148" text-anchor="middle" font-size="11" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">楽天 → Amazon / Yahoo / BASE</text>
+
+  <text x="220" y="200" text-anchor="middle" font-size="44" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🛒</text>
+
+  <text x="60" y="245" font-size="12" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">難易度</text>
+  <text x="160" y="245" font-size="11" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">★☆☆ かんたん</text>
+
+  <text x="60" y="270" font-size="12" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">単価帯</text>
+  <text x="160" y="270" font-size="11" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥1,500〜¥3,000（同等）</text>
+
+  <text x="60" y="295" font-size="12" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">w1-2 の型</text>
+  <text x="160" y="295" font-size="11" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">そのまま使える</text>
+
+  <text x="60" y="328" font-size="11" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">具体例</text>
+  <text x="60" y="346" font-size="10" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・Amazonの家電カテゴリショップリスト</text>
+  <text x="60" y="362" font-size="10" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・Yahoo!ショッピングのアパレル業者</text>
+  <text x="60" y="378" font-size="10" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・BASE/STORESのD2Cブランド</text>
+
+  <text x="60" y="412" font-size="11" font-weight="700" fill="#2563eb" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ 最初の拡張先におすすめ</text>
+
+  <!-- Pattern B: 業界拡張 -->
+  <g filter="url(#ce-shadow)">
+    <rect x="420" y="100" width="360" height="340" rx="14" fill="#dcfce7" stroke="#22c55e" stroke-width="4"/>
+  </g>
+  <rect x="420" y="100" width="360" height="50" rx="14" fill="#bbf7d0"/>
+  <rect x="420" y="125" width="360" height="25" fill="#bbf7d0"/>
+  <text x="600" y="132" text-anchor="middle" font-size="15" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⭐ B｜業界拡張</text>
+  <text x="600" y="148" text-anchor="middle" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">食品 → 美容 / 家電 / 不動産 / IT</text>
+
+  <text x="600" y="200" text-anchor="middle" font-size="44" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🏢</text>
+
+  <text x="440" y="245" font-size="12" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">難易度</text>
+  <text x="540" y="245" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">★★☆ ふつう</text>
+
+  <text x="440" y="270" font-size="12" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">単価帯</text>
+  <text x="540" y="270" font-size="11" font-weight="700" fill="#16a34a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥2,500〜¥5,000（UP！）</text>
+
+  <text x="440" y="295" font-size="12" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">w1-2 の型</text>
+  <text x="540" y="295" font-size="11" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">微調整で使える</text>
+
+  <text x="440" y="328" font-size="11" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">具体例</text>
+  <text x="440" y="346" font-size="10" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・美容クリニックの企業リスト</text>
+  <text x="440" y="362" font-size="10" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・東京23区の不動産業者</text>
+  <text x="440" y="378" font-size="10" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・SaaS/IT企業のリスト</text>
+
+  <text x="440" y="412" font-size="11" font-weight="700" fill="#16a34a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ 単価UPの効果が大きい</text>
+
+  <!-- Pattern C: 専門特化 -->
+  <g filter="url(#ce-shadow)">
+    <rect x="800" y="100" width="360" height="340" rx="14" fill="white" stroke="#d97706" stroke-width="3"/>
+  </g>
+  <rect x="800" y="100" width="360" height="50" rx="14" fill="#fef3c7"/>
+  <rect x="800" y="125" width="360" height="25" fill="#fef3c7"/>
+  <text x="980" y="132" text-anchor="middle" font-size="15" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">C｜専門特化</text>
+  <text x="980" y="148" text-anchor="middle" font-size="11" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">特定業界の深掘り（プロ寄り）</text>
+
+  <text x="980" y="200" text-anchor="middle" font-size="44" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">💎</text>
+
+  <text x="820" y="245" font-size="12" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">難易度</text>
+  <text x="920" y="245" font-size="11" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">★★★ チャレンジ</text>
+
+  <text x="820" y="270" font-size="12" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">単価帯</text>
+  <text x="920" y="270" font-size="11" font-weight="700" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥5,000〜¥15,000（高単価）</text>
+
+  <text x="820" y="295" font-size="12" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">w1-2 の型</text>
+  <text x="920" y="295" font-size="11" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">+ 業界知識が必要</text>
+
+  <text x="820" y="328" font-size="11" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">具体例</text>
+  <text x="820" y="346" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・「美容クリニック特化リサーチャー」</text>
+  <text x="820" y="362" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・「飲食業界DX担当者リスト」</text>
+  <text x="820" y="378" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・「Web3企業のキーパーソン調査」</text>
+
+  <text x="820" y="412" font-size="11" font-weight="700" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ 月10万超えの足がかり</text>
+
+  <!-- Footer -->
+  <text x="600" y="465" text-anchor="middle" font-size="11" fill="#1e3a8a" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">最初は A、慣れたら B、本気でやるなら C — 段階的に広げていく</text>
+</svg>

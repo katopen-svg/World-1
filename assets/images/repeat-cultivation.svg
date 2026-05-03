@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid meet" role="img" aria-label="リピートクライアントを育てる4ステップ：初回★5納品→2件目で継続関係→3-4件目で関係深化→5件目以降で主力顧客化と単価UP">
+  <defs>
+    <filter id="rc-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="rc-arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="460" fill="#fff7ed" rx="14"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#7c2d12" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🌱 リピートクライアントを育てる4ステップ</text>
+  <text x="600" y="64" text-anchor="middle" font-size="12" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">1人のクライアントから「単発の1件」じゃなく「主力顧客」を育てる</text>
+
+  <!-- Stage 1: 初回★5納品 -->
+  <g filter="url(#rc-shadow)">
+    <rect x="40" y="100" width="260" height="280" rx="14" fill="white" stroke="#22c55e" stroke-width="3"/>
+  </g>
+  <rect x="40" y="100" width="260" height="44" rx="14" fill="#dcfce7"/>
+  <rect x="40" y="125" width="260" height="19" fill="#dcfce7"/>
+  <text x="170" y="129" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">① 初回★5納品</text>
+
+  <text x="170" y="200" text-anchor="middle" font-size="48" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⭐</text>
+  <text x="170" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥1,500</text>
+  <text x="170" y="258" text-anchor="middle" font-size="11" fill="#16a34a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">標準単価でスタート</text>
+
+  <text x="60" y="300" font-size="11" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">やること</text>
+  <text x="60" y="318" font-size="10" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・w1-4 の3要素フル活用</text>
+  <text x="60" y="334" font-size="10" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・継続提案の一言を必ず入れる</text>
+  <text x="60" y="350" font-size="10" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・クライアント情報をメモ</text>
+  <text x="60" y="366" font-size="11" font-weight="700" fill="#16a34a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ ★5評価獲得が必須</text>
+
+  <line x1="305" y1="240" x2="332" y2="240" stroke="#d97706" stroke-width="3" marker-end="url(#rc-arrow)"/>
+
+  <!-- Stage 2: 2件目で継続関係 -->
+  <g filter="url(#rc-shadow)">
+    <rect x="335" y="100" width="260" height="280" rx="14" fill="white" stroke="#3b82f6" stroke-width="3"/>
+  </g>
+  <rect x="335" y="100" width="260" height="44" rx="14" fill="#dbeafe"/>
+  <rect x="335" y="125" width="260" height="19" fill="#dbeafe"/>
+  <text x="465" y="129" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">② 2件目で関係作り</text>
+
+  <text x="465" y="200" text-anchor="middle" font-size="48" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🔁</text>
+  <text x="465" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥1,500〜¥2,000</text>
+  <text x="465" y="258" text-anchor="middle" font-size="11" fill="#2563eb" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">同単価 or 少しUP</text>
+
+  <text x="355" y="300" font-size="11" font-weight="700" fill="#1e3a8a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">やること</text>
+  <text x="355" y="318" font-size="10" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・前回の好み・癖を覚えてる</text>
+  <text x="355" y="334" font-size="10" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・「前回同様で進めます」感</text>
+  <text x="355" y="350" font-size="10" fill="#1d4ed8" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・速度を上げて納期前に納品</text>
+  <text x="355" y="366" font-size="11" font-weight="700" fill="#2563eb" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ 「楽な人」と認識される</text>
+
+  <line x1="600" y1="240" x2="627" y2="240" stroke="#d97706" stroke-width="3" marker-end="url(#rc-arrow)"/>
+
+  <!-- Stage 3: 3-4件目で関係深化 -->
+  <g filter="url(#rc-shadow)">
+    <rect x="630" y="100" width="260" height="280" rx="14" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  </g>
+  <rect x="630" y="100" width="260" height="44" rx="14" fill="#fef3c7"/>
+  <rect x="630" y="125" width="260" height="19" fill="#fef3c7"/>
+  <text x="760" y="129" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">③ 3-4件目で深化</text>
+
+  <text x="760" y="200" text-anchor="middle" font-size="48" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🤝</text>
+  <text x="760" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥2,000〜¥2,500</text>
+  <text x="760" y="258" text-anchor="middle" font-size="11" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">単価UP交渉のタイミング</text>
+
+  <text x="650" y="300" font-size="11" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">やること</text>
+  <text x="650" y="318" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・自分から改善提案を出す</text>
+  <text x="650" y="334" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・関連業務（別カテゴリ）も提案</text>
+  <text x="650" y="350" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・3件目から単価UP打診</text>
+  <text x="650" y="366" font-size="11" font-weight="700" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ 「相談される人」になる</text>
+
+  <line x1="895" y1="240" x2="922" y2="240" stroke="#d97706" stroke-width="3" marker-end="url(#rc-arrow)"/>
+
+  <!-- Stage 4: 5件目以降で主力顧客化 -->
+  <g filter="url(#rc-shadow)">
+    <rect x="925" y="100" width="240" height="280" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  </g>
+  <rect x="925" y="100" width="240" height="44" rx="14" fill="#fde68a"/>
+  <rect x="925" y="125" width="240" height="19" fill="#fde68a"/>
+  <text x="1045" y="129" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">④ 主力顧客化</text>
+
+  <text x="1045" y="200" text-anchor="middle" font-size="48" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">💎</text>
+  <text x="1045" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">¥2,500〜¥3,500</text>
+  <text x="1045" y="258" text-anchor="middle" font-size="11" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">月3〜5件のリピート</text>
+
+  <text x="945" y="300" font-size="11" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">特徴</text>
+  <text x="945" y="318" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・応募ゼロで案件が入る</text>
+  <text x="945" y="334" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・優先発注の常連</text>
+  <text x="945" y="350" font-size="10" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">・新規案件も紹介してくれる</text>
+  <text x="945" y="366" font-size="11" font-weight="700" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">→ 月収の柱になる</text>
+
+  <!-- Footer -->
+  <text x="600" y="430" text-anchor="middle" font-size="12" fill="#9a3412" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">主力顧客が3社できれば、月20件×平均¥3,000 = 月¥60,000の安定収入の土台</text>
+</svg>

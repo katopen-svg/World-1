@@ -16,7 +16,7 @@
  * - index.html は pages-md/ の全ファイルから自動生成（ステージ別グルーピング）
  */
 
-import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 import { marked } from "marked";
@@ -54,7 +54,7 @@ function pageTemplate({ title, body, slug }) {
 ${body}
 </main>
 <footer class="site-footer">
-  <p>World1 — AIでリサーチ業務を自動化して月3万達成</p>
+  <p>World1 — AIでリサーチ業務を自動化して月5万達成</p>
 </footer>
 <script>
 // stage-checklist: 全部 ✓ で .all-checked が付く（チェック数を問わない）
@@ -71,6 +71,43 @@ document.querySelectorAll('.stage-checklist').forEach(list => {
 </body>
 </html>
 `;
+}
+
+// ───────────────────────────────────────────────
+// スタンドアロンページ（ルート直下のMDをHTML化、index/教材本体とは独立）
+// ───────────────────────────────────────────────
+function standaloneTemplate({ title, body }) {
+  return `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${escapeHtml(title)}</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="lecture">
+${body}
+</main>
+<footer class="site-footer">
+  <p>World1 — 受講生向け配布資料</p>
+</footer>
+</body>
+</html>
+`;
+}
+
+function buildStandalonePage(filename) {
+  const path = join(ROOT, filename);
+  if (!existsSync(path)) return null;
+  const md = readFileSync(path, "utf8");
+  const title = extractTitle(md);
+  let body = marked.parse(md);
+  body = wrapH1Pipe(body);
+  const html = standaloneTemplate({ title, body });
+  const outName = filename.replace(/\.md$/, ".html");
+  writeFileSync(join(ROOT, outName), html, "utf8");
+  return outName;
 }
 
 function indexTemplate({ stages }) {
@@ -93,11 +130,11 @@ ${stage.items.map(item => `      <li><a href="pages/${item.slug}.html">${escapeH
 <body>
 <main class="lecture lecture--index">
   <h1 class="hero">World1</h1>
-  <p class="hero__sub">AIでリサーチ業務を自動化して月3万達成</p>
+  <p class="hero__sub">AIでリサーチ業務を自動化して月5万達成</p>
 ${stageBlocks}
 </main>
 <footer class="site-footer">
-  <p>World1 — AIでリサーチ業務を自動化して月3万達成</p>
+  <p>World1 — AIでリサーチ業務を自動化して月5万達成</p>
 </footer>
 </body>
 </html>
@@ -242,6 +279,15 @@ function main() {
   });
   buildIndex(all);
   console.log(`✓ index.html (${all.length} pages)`);
+
+  // ───────────────────────────────────────────────
+  // スタンドアロンページのビルド（ルートにある独立配布物）
+  // ───────────────────────────────────────────────
+  const standalones = ["受講生スターターガイド.md"];
+  for (const f of standalones) {
+    const out = buildStandalonePage(f);
+    if (out) console.log(`✓ ${out} (standalone)`);
+  }
 }
 
 main();

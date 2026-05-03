@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" preserveAspectRatio="xMidYMid meet" role="img" aria-label="w1-4 実案件のジャーニー：採用通知から即返信、質問、制作、納品、評価★5、リピート発注までの7ステップ。各ステップでクライアントが喜ぶポイントを併記">
+  <defs>
+    <filter id="w14-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="w14-arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#0ea5e9"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="580" fill="#f0fdfa" rx="14"/>
+
+  <!-- Title -->
+  <text x="550" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#134e4a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🤝 実案件のジャーニー — クライアント目線で各ステップを設計</text>
+
+  <text x="550" y="64" text-anchor="middle" font-size="12" fill="#0f766e" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">各ノードの 🎁 は「クライアントがこの瞬間に嬉しいこと」</text>
+
+  <!-- ============== TOP ROW: 採用 → 即返信 → 質問 → 制作 ============== -->
+
+  <!-- Step 1: 採用通知 -->
+  <g filter="url(#w14-shadow)">
+    <circle cx="140" cy="170" r="55" fill="white" stroke="#14b8a6" stroke-width="3"/>
+  </g>
+  <text x="140" y="167" text-anchor="middle" font-size="32" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📨</text>
+  <text x="140" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#134e4a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">採用通知</text>
+  <text x="140" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#0f766e" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Day 0</text>
+  <text x="140" y="263" text-anchor="middle" font-size="10" fill="#14b8a6" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🎁「やる気ある人だ」</text>
+
+  <line x1="200" y1="170" x2="262" y2="170" stroke="#0ea5e9" stroke-width="3" marker-end="url(#w14-arrow)"/>
+
+  <!-- Step 2: 即返信 -->
+  <g filter="url(#w14-shadow)">
+    <circle cx="320" cy="170" r="58" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+  </g>
+  <text x="320" y="167" text-anchor="middle" font-size="32" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⚡</text>
+  <text x="320" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">即返信</text>
+  <text x="320" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">30分以内</text>
+  <text x="320" y="263" text-anchor="middle" font-size="10" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🎁「動いてくれそう」</text>
+
+  <line x1="380" y1="170" x2="442" y2="170" stroke="#0ea5e9" stroke-width="3" marker-end="url(#w14-arrow)"/>
+
+  <!-- Step 3: 質問・確認 -->
+  <g filter="url(#w14-shadow)">
+    <circle cx="500" cy="170" r="55" fill="white" stroke="#14b8a6" stroke-width="3"/>
+  </g>
+  <text x="500" y="167" text-anchor="middle" font-size="32" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">❓</text>
+  <text x="500" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#134e4a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">質問・確認</text>
+  <text x="500" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#0f766e" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Day 1</text>
+  <text x="500" y="263" text-anchor="middle" font-size="10" fill="#14b8a6" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🎁「認識合わせてくれる」</text>
+
+  <line x1="560" y1="170" x2="622" y2="170" stroke="#0ea5e9" stroke-width="3" marker-end="url(#w14-arrow)"/>
+
+  <!-- Step 4: 制作 -->
+  <g filter="url(#w14-shadow)">
+    <circle cx="680" cy="170" r="55" fill="white" stroke="#14b8a6" stroke-width="3"/>
+  </g>
+  <text x="680" y="167" text-anchor="middle" font-size="32" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🛠️</text>
+  <text x="680" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#134e4a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">制作</text>
+  <text x="680" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#0f766e" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Day 1〜2</text>
+  <text x="680" y="263" text-anchor="middle" font-size="10" fill="#14b8a6" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🎁 w1-2の型で安心</text>
+
+  <!-- Curved arrow: 制作 → 納品 (down then left) -->
+  <path d="M 680 230 L 680 295 Q 680 315 660 315 L 340 315 Q 320 315 320 335 L 320 339" stroke="#0ea5e9" stroke-width="3" fill="none" marker-end="url(#w14-arrow)"/>
+  <text x="500" y="308" text-anchor="middle" font-size="11" font-weight="700" fill="#0369a1" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">期日守って完成</text>
+
+  <!-- ============== BOTTOM ROW: 納品 → 評価★5 → リピート ============== -->
+
+  <!-- Step 5: 納品 -->
+  <g filter="url(#w14-shadow)">
+    <circle cx="320" cy="395" r="60" fill="#dcfce7" stroke="#22c55e" stroke-width="3"/>
+  </g>
+  <text x="320" y="392" text-anchor="middle" font-size="34" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">📤</text>
+  <text x="320" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">納品</text>
+  <text x="320" y="475" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Day 2〜3</text>
+  <text x="320" y="493" text-anchor="middle" font-size="10" fill="#16a34a" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🎁「期日通りだ！」</text>
+
+  <line x1="380" y1="395" x2="437" y2="395" stroke="#0ea5e9" stroke-width="3" marker-end="url(#w14-arrow)"/>
+
+  <!-- Step 6: 評価★5 -->
+  <g filter="url(#w14-shadow)">
+    <circle cx="555" cy="395" r="63" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  </g>
+  <text x="555" y="392" text-anchor="middle" font-size="36" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">⭐</text>
+  <text x="555" y="421" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">評価★5</text>
+  <text x="555" y="478" text-anchor="middle" font-size="12" font-weight="700" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Day 3〜4</text>
+  <text x="555" y="496" text-anchor="middle" font-size="10" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🎁「期待以上だった」</text>
+
+  <line x1="618" y1="395" x2="675" y2="395" stroke="#0ea5e9" stroke-width="3" marker-end="url(#w14-arrow)"/>
+
+  <!-- Step 7: リピート (GOAL) -->
+  <g filter="url(#w14-shadow)">
+    <circle cx="800" cy="395" r="68" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  </g>
+  <text x="800" y="392" text-anchor="middle" font-size="38" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🔁</text>
+  <text x="800" y="425" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">リピート</text>
+  <text x="800" y="483" text-anchor="middle" font-size="12" font-weight="700" fill="#9a3412" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">Day 5+</text>
+  <text x="800" y="501" text-anchor="middle" font-size="10" fill="#d97706" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🎁「また頼もう」</text>
+
+  <!-- GOAL banner -->
+  <g filter="url(#w14-shadow)">
+    <rect x="700" y="518" width="200" height="32" rx="16" fill="#d97706"/>
+  </g>
+  <text x="800" y="540" text-anchor="middle" font-size="13" font-weight="700" fill="white" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">🏆 w1-4 ステージクリア！</text>
+
+  <!-- Footer caption (left side) -->
+  <text x="240" y="540" text-anchor="middle" font-size="11" fill="#0f766e" font-style="italic" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif">「次回もこの人にお願いしたい」と思われたら、副業は加速する</text>
+</svg>
