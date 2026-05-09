@@ -93,6 +93,35 @@ ${body}
   <p>World1 — 受講生向け配布資料</p>
 </footer>
 </body>
+<script>
+(function() {
+  var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbxpOswPhEs6HACs0XA0pNS88zj9dHRyGkInlQLTQH81UZaJBe4tl1PiP2tI9A3xw0Cz/exec';
+  function init() {
+    var params = new URLSearchParams(window.location.search);
+    var email = params.get('email');
+    var stageId = params.get('stageId');
+    var rowIndex = params.get('rowIndex');
+    if (!email || !stageId || !rowIndex) return;
+    var wrap = document.createElement('div');
+    wrap.style.cssText = 'margin:60px auto 40px;max-width:500px;padding:0 20px;text-align:center;';
+    var btn = document.createElement('a');
+    btn.href = WEBAPP_URL + '?action=complete&email=' + encodeURIComponent(email) + '&stageId=' + encodeURIComponent(stageId) + '&rowIndex=' + rowIndex;
+    btn.textContent = '\u2705 このアクションを完了する';
+    btn.style.cssText = 'display:block;padding:18px 32px;background:linear-gradient(135deg,#22c55e,#16a34a);color:white;font-weight:bold;font-size:18px;text-decoration:none;border-radius:14px;box-shadow:0 6px 16px rgba(34,197,94,0.3);';
+    var note = document.createElement('p');
+    note.textContent = '\u62bc\u3059\u3068\u30b9\u30d7\u30b7\u3068\u30af\u30a8\u30b9\u30c8\u4e00\u89a7\u306e\u4e21\u65b9\u306b\u30c1\u30a7\u30c3\u30af\u304c\u5165\u308a\u307e\u3059';
+    note.style.cssText = 'margin-top:12px;color:#6b7280;font-size:14px;';
+    wrap.appendChild(btn);
+    wrap.appendChild(note);
+    document.body.appendChild(wrap);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 </html>
 `;
 }
