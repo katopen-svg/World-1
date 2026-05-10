@@ -71,25 +71,71 @@ document.querySelectorAll('.stage-checklist').forEach(list => {
 <script>
 (function() {
   var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbxpOswPhEs6HACs0XA0pNS88zj9dHRyGkInlQLTQH81UZaJBe4tl1PiP2tI9A3xw0Cz/exec';
+
+  function removeNextActionLinks() {
+    var allP = document.querySelectorAll('p');
+    for (var i = 0; i < allP.length; i++) {
+      var t = allP[i].textContent || '';
+      if (t.indexOf('次のアクション') !== -1) {
+        allP[i].remove();
+      }
+    }
+  }
+
+  function findAnchor() {
+    // Priority 1: 最後の .stage-checklist
+    var checklists = document.querySelectorAll('.stage-checklist');
+    if (checklists.length > 0) return checklists[checklists.length - 1];
+
+    // Priority 2: 「おさらい」「まとめ」「checkpoint」を含む見出しのセクション末尾
+    var headings = document.querySelectorAll('h1, h2, h3, h4');
+    for (var j = 0; j < headings.length; j++) {
+      var ht = headings[j].textContent || '';
+      if (/おさらい|まとめ|checkpoint/i.test(ht)) {
+        var node = headings[j].nextElementSibling;
+        var lastInSection = headings[j];
+        while (node && !/^H[1-4]$/.test(node.tagName)) {
+          lastInSection = node;
+          node = node.nextElementSibling;
+        }
+        return lastInSection;
+      }
+    }
+    return null;
+  }
+
   function init() {
+    removeNextActionLinks();
+
     var params = new URLSearchParams(window.location.search);
     var email = params.get('email');
     var stageId = params.get('stageId');
     var rowIndex = params.get('rowIndex');
     if (!email || !stageId || !rowIndex) return;
+
     var wrap = document.createElement('div');
-    wrap.style.cssText = 'margin:60px auto 40px;max-width:500px;padding:0 20px;text-align:center;';
+    wrap.style.cssText = 'margin:40px auto;max-width:500px;padding:0 20px;text-align:center;';
+
     var btn = document.createElement('a');
     btn.href = WEBAPP_URL + '?action=complete&email=' + encodeURIComponent(email) + '&stageId=' + encodeURIComponent(stageId) + '&rowIndex=' + rowIndex;
     btn.textContent = '\u2705 このアクションを完了する';
     btn.style.cssText = 'display:block;padding:18px 32px;background:linear-gradient(135deg,#22c55e,#16a34a);color:white;font-weight:bold;font-size:18px;text-decoration:none;border-radius:14px;box-shadow:0 6px 16px rgba(34,197,94,0.3);';
+
     var note = document.createElement('p');
     note.textContent = '\u62bc\u3059\u3068\u30b9\u30d7\u30b7\u3068\u30af\u30a8\u30b9\u30c8\u4e00\u89a7\u306e\u4e21\u65b9\u306b\u30c1\u30a7\u30c3\u30af\u304c\u5165\u308a\u307e\u3059';
     note.style.cssText = 'margin-top:12px;color:#6b7280;font-size:14px;';
+
     wrap.appendChild(btn);
     wrap.appendChild(note);
-    document.body.appendChild(wrap);
+
+    var anchor = findAnchor();
+    if (anchor && anchor.parentNode) {
+      anchor.parentNode.insertBefore(wrap, anchor.nextSibling);
+    } else {
+      document.body.appendChild(wrap);
+    }
   }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
