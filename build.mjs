@@ -68,31 +68,6 @@ document.querySelectorAll('.stage-checklist').forEach(list => {
   checkboxes.forEach(cb => cb.addEventListener('change', update));
 });
 </script>
-</body>
-</html>
-`;
-}
-
-// ───────────────────────────────────────────────
-// スタンドアロンページ（ルート直下のMDをHTML化、index/教材本体とは独立）
-// ───────────────────────────────────────────────
-function standaloneTemplate({ title, body }) {
-  return `<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${escapeHtml(title)}</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<main class="lecture">
-${body}
-</main>
-<footer class="site-footer">
-  <p>World1 — 受講生向け配布資料</p>
-</footer>
-</body>
 <script>
 (function() {
   var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbxpOswPhEs6HACs0XA0pNS88zj9dHRyGkInlQLTQH81UZaJBe4tl1PiP2tI9A3xw0Cz/exec';
@@ -122,6 +97,31 @@ ${body}
   }
 })();
 </script>
+</body>
+</html>
+`;
+}
+
+// ───────────────────────────────────────────────
+// スタンドアロンページ（ルート直下のMDをHTML化、index/教材本体とは独立）
+// ───────────────────────────────────────────────
+function standaloneTemplate({ title, body }) {
+  return `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${escapeHtml(title)}</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="lecture">
+${body}
+</main>
+<footer class="site-footer">
+  <p>World1 — 受講生向け配布資料</p>
+</footer>
+</body>
 </html>
 `;
 }
