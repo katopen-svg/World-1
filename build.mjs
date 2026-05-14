@@ -121,6 +121,19 @@ document.querySelectorAll('.stage-checklist').forEach(list => {
     btn.textContent = '\u2705 このアクションを完了する';
     btn.style.cssText = 'display:block;padding:18px 32px;background:linear-gradient(135deg,#22c55e,#16a34a);color:white;font-weight:bold;font-size:18px;text-decoration:none;border-radius:14px;box-shadow:0 6px 16px rgba(34,197,94,0.3);';
 
+    // 押下時に「データを取得中…」の全画面オーバーレイを出してから WebApp へ遷移する
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var overlay = document.createElement('div');
+      overlay.style.cssText = 'position:fixed;inset:0;background:#f8fafc;z-index:99999;display:flex;align-items:center;justify-content:center;';
+      overlay.innerHTML = '<div style="text-align:center;"><div style="font-size:60px;animation:sqLoadBounce 1s infinite ease-in-out;">⚔️</div><p style="margin-top:16px;font-size:18px;color:#475569;font-weight:600;">データを取得中…</p></div>';
+      var styleEl = document.createElement('style');
+      styleEl.textContent = '@keyframes sqLoadBounce {0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}';
+      document.head.appendChild(styleEl);
+      document.body.appendChild(overlay);
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){ window.location.href = btn.href; }); });
+    });
+
     var note = document.createElement('p');
     note.textContent = '\u62bc\u3059\u3068\u30b9\u30d7\u30b7\u3068\u30af\u30a8\u30b9\u30c8\u4e00\u89a7\u306e\u4e21\u65b9\u306b\u30c1\u30a7\u30c3\u30af\u304c\u5165\u308a\u307e\u3059';
     note.style.cssText = 'margin-top:12px;color:#6b7280;font-size:14px;';
